@@ -1,5 +1,3 @@
-$("#container").css({height:$(window).height(300), width:$(window).width(), marginTop:"0px",marginBottom:"50px"});
-
 var map = new BMap.Map("container");
 var center = new BMap.Point(113.646769, 34.769658);
 
