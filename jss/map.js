@@ -160,7 +160,8 @@ function markerDragged(e,index){
 //根据当前绘制的标注类型来设置鼠标的样式
 function setCursor(overlayType){
 	if(overlayType == "ol_marker"){
-		var cursorUrl = "url('./images/" + overlayType + ".cur')";
+		//var cursorUrl = "url('../images/" + overlayType + ".cur')";
+		var cursorUrl = "url('http://api0.map.bdimg.com/images/marker_red_sprite.png')";
 		map.setDefaultCursor(cursorUrl+','+cursorStyle[overlayType]);
 	}else{
 		map.setDefaultCursor(cursorStyle[overlayType]);

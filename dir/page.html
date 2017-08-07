@@ -11,10 +11,16 @@
 	width:100%;
 }
 </style>
+<script type="text/javascript">
+function foo(){
+	alert("url('./images/" + "xxx" + ".cur')");
+}
+</script>
 </head>
 <body>
 <div id="container"></div>
 <input type="button" value="添加覆盖物" onclick="addMarker()" id="btn"/>
-<script src="map.js" type="text/javascript"></script>
+<input type="button" value="url" onclick="foo()" />
+<script src="../jss/map.js" type="text/javascript"></script>
 </body>
 </html>
